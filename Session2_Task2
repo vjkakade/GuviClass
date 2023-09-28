@@ -1,0 +1,7 @@
+root@VJLAPTOP:/home/vjkakade/guvi# touch /home/demo.txt
+root@VJLAPTOP:/home/vjkakade/guvi# ll /home/demo.txt
+-rw-r--r-- 1 root root 0 Sep 29 00:37 /home/demo.txt
+root@VJLAPTOP:/home/vjkakade/guvi# chmod 764 /home/demo.txt
+root@VJLAPTOP:/home/vjkakade/guvi# ll /home/demo.txt
+-rwxrw-r-- 1 root root 0 Sep 29 00:37 /home/demo.txt*
+root@VJLAPTOP:/home/vjkakade/guvi#
