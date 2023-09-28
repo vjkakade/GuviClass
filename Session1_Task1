@@ -1,0 +1,57 @@
+vjkakade@VJLAPTOP:~$ mkdir guvi
+vjkakade@VJLAPTOP:~$ cd guvi/
+vjkakade@VJLAPTOP:~/guvi$ ll
+total 8
+drwxr-xr-x 2 vjkakade vjkakade 4096 Sep 29 00:28 ./
+drwxr-x--- 7 vjkakade vjkakade 4096 Sep 29 00:28 ../
+vjkakade@VJLAPTOP:~/guvi$ touch file{1..20}.txt
+vjkakade@VJLAPTOP:~/guvi$ ll
+total 8
+drwxr-xr-x 2 vjkakade vjkakade 4096 Sep 29 00:29 ./
+drwxr-x--- 7 vjkakade vjkakade 4096 Sep 29 00:28 ../
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file1.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file10.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file11.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file12.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file13.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file14.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file15.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file16.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file17.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file18.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file19.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file2.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file20.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file3.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file4.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file5.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file6.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file7.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file8.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file9.txt
+vjkakade@VJLAPTOP:~/guvi$ for i in {1..5}; do mv "file$i.txt" "file$i.yml"; done
+vjkakade@VJLAPTOP:~/guvi$ ll
+total 8
+drwxr-xr-x 2 vjkakade vjkakade 4096 Sep 29 00:32 ./
+drwxr-x--- 7 vjkakade vjkakade 4096 Sep 29 00:28 ../
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file1.yml
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file10.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file11.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file12.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file13.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file14.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file15.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file16.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file17.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file18.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file19.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file2.yml
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file20.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file3.yml
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file4.yml
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file5.yml
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file6.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file7.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file8.txt
+-rw-r--r-- 1 vjkakade vjkakade    0 Sep 29 00:29 file9.txt
+vjkakade@VJLAPTOP:~/guvi$
